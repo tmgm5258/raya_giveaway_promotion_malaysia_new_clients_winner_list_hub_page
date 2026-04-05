@@ -169,7 +169,37 @@ video { width:100%; min-height:600px; border-radius:8px; display:block; backgrou
     </table>
   </div>
   <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">Post-draw pool: 49 Gift Box remaining, 8 Gold remaining, 5 Air Purifier remaining (62 total unawarded).</p>
+  <div class="video-actions">
+    <a href="#" id="csv-download" onclick="downloadDrawResultsCSV(); return false;">&#11015; Download Draw Results (.csv)</a>
+  </div>
 </div>
+
+<script>
+function downloadDrawResultsCSV() {
+  var headers = ['Draw #','Winner Name','User ID','Country','Net Deposit (USD)','Trading Volume (Lots)','Lucky Draw Chances','Reward Category','Reward Item','Fulfilment Status'];
+  var rows = [
+    ['1','Lee foon Lim','924025','Malaysia','6272.00','6.46','3','999.9 Further Top RAYA KETUPAT-1g Gold','Gold #10 - RAYA KETUPAT-1g Gold','Pending'],
+    ['2','Lee foon Lim','924025','Malaysia','6272.00','6.46','3','999.9 Further Top RAYA KETUPAT-1g Gold','Gold #5 - RAYA KETUPAT-1g Gold','Pending'],
+    ['3','Lee foon Lim','924025','Malaysia','6272.00','6.46','3','Najwa Ramadhan Raya Gift Box 2026','Gift Box #23 - Najwa Ramadhan Raya Gift Box 2026','Pending']
+  ];
+  var csv = '\uFEFF' + headers.join(',') + '\r\n';
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i].map(function(field) {
+      return '"' + field.replace(/"/g, '""') + '"';
+    });
+    csv += row.join(',') + '\r\n';
+  }
+  var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  var url = URL.createObjectURL(blob);
+  var link = document.createElement('a');
+  link.href = url;
+  link.download = 'TMGM_2026_MY_Raya_Giveaway_Promotion_New_Client_Draw_Results.csv';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+</script>
 
 <div class="section" id="winners">
   <div class="section-title"><span class="num">5</span> Winner Summary &amp; Prize Allocation</div>
