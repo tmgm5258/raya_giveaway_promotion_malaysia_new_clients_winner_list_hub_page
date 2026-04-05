@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TMGM 2026 Raya Giveaway Promotion — Malaysia New Clients — Campaign Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --dark-blue: #000B50; --mid-blue: #2C5FAD; --light-blue: #00B3EB; --bright-blue: #22FFFF;
+  --red: #DF1737; --green: #00D930; --gold: #D4A017; --gold-light: #FFF8E7;
+  --bg: #FAFBFC; --card: #FFFFFF; --border: #E2E8F0; --text: #0F172A; --text-secondary: #64748B; --text-muted: #94A3B8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Plus Jakarta Sans',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+.container { max-width:1100px; margin:0 auto; padding:0 20px; }
+.header { background:var(--dark-blue); padding:28px 0; text-align:center; }
+.header img { height:50px; margin-bottom:12px; }
+.header h1 { color:#fff; font-size:24px; font-weight:800; letter-spacing:-0.5px; }
+.header h2 { color:var(--bright-blue); font-size:13px; font-weight:500; letter-spacing:2px; text-transform:uppercase; margin-top:4px; }
+.nav { background:#fff; border-bottom:1px solid var(--border); padding:12px 0; position:sticky; top:0; z-index:100; }
+.nav-inner { display:grid; grid-template-columns:repeat(8, 1fr); gap:6px; padding:0 20px; max-width:1100px; margin:0 auto; }
+.nav a { text-decoration:none; color:var(--text-secondary); font-size:12px; font-weight:600; padding:6px 14px; border-radius:6px; white-space:nowrap; transition:all 0.2s; text-align:center; }
+.nav a:hover { background:var(--dark-blue); color:#fff; }
+.section { margin:44px 0; padding-bottom:10px; }
+.section-title { font-size:18px; font-weight:800; color:var(--dark-blue); margin-bottom:4px; display:flex; align-items:center; gap:10px; }
+.section-title .num { background:#cc1042; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
+.section-sub { font-size:13px; color:var(--text-secondary); margin-bottom:16px; margin-left:38px; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:16px; }
+.stats-row { display:grid; grid-template-columns:repeat(auto-fit, minmax(140px,1fr)); gap:12px; margin-bottom:16px; }
+.stat-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; text-align:center; position:relative; cursor:default; }
+.stat-card .val { font-size:28px; font-weight:800; color:var(--dark-blue); }
+.stat-card .label { font-size:11px; color:var(--text-secondary); text-transform:uppercase; letter-spacing:0.5px; margin-top:2px; }
+.stat-card.gold { border-color:var(--gold); background:var(--gold-light); }
+.stat-card.gold .val { color:var(--gold); }
+.stat-card .tooltip { visibility:hidden; opacity:0; position:absolute; bottom:calc(100% + 8px); left:50%; transform:translateX(-50%); background:var(--dark-blue); color:#fff; padding:10px 14px; border-radius:8px; font-size:11px; font-weight:400; line-height:1.5; width:260px; text-align:left; z-index:10; transition:all 0.2s; pointer-events:none; box-shadow:0 4px 12px rgba(0,0,0,0.15); }
+.stat-card .tooltip::after { content:''; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:6px solid transparent; border-top-color:var(--dark-blue); }
+.stat-card:hover .tooltip { visibility:visible; opacity:1; }
+.links-row { display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin-top:12px; }
+.links-row a { display:flex; align-items:center; justify-content:center; gap:6px; padding:10px 16px; border-radius:8px; font-size:12px; font-weight:600; text-decoration:none; border:1px solid var(--border); color:var(--mid-blue); transition:all 0.2s; text-align:center; }
+.links-row a:hover { background:var(--dark-blue); color:#fff; border-color:var(--dark-blue); }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:800px; }
+th { background:var(--dark-blue); color:#fff; padding:10px 12px; text-align:left; font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.5px; white-space:nowrap; }
+td { padding:8px 12px; border-bottom:1px solid var(--border); white-space:nowrap; }
+tr:hover { background:#F8FAFC; }
+tr.eligible { background:#F0FFF4; }
+tr.eligible:hover { background:#E6FFED; }
+tr.ineligible { color:var(--text-muted); }
+.table-wrap { overflow-x:auto; border-radius:10px; border:1px solid var(--border); }
+.video-wrap { background:#F8FAFC; border:1px solid var(--border); border-radius:12px; padding:12px; }
+video { width:100%; min-height:600px; border-radius:8px; display:block; background:#000; object-fit:contain; }
+.video-actions { display:flex; justify-content:flex-end; margin-top:10px; }
+.video-actions a { display:inline-flex; align-items:center; gap:6px; padding:8px 18px; border-radius:8px; font-size:12px; font-weight:600; text-decoration:none; background:var(--dark-blue); color:#fff; transition:all 0.2s; }
+.video-actions a:hover { background:var(--mid-blue); }
+.winner-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px,1fr)); gap:12px; }
+.winner-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; display:flex; align-items:center; gap:14px; }
+.winner-card .bars { font-size:24px; font-weight:800; color:var(--gold); min-width:40px; text-align:center; }
+.winner-card .bars small { display:block; font-size:9px; color:var(--text-muted); font-weight:500; }
+.winner-card .info { flex:1; }
+.winner-card .info .name { font-weight:700; font-size:14px; }
+.winner-card .info .detail { font-size:11px; color:var(--text-secondary); margin-top:2px; }
+.winner-card .status { padding:4px 10px; border-radius:20px; font-size:10px; font-weight:700; background:#FEF3C7; color:#92400E; }
+.check-item { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); }
+.check-item:last-child { border-bottom:none; }
+.check-icon { width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; flex-shrink:0; margin-top:2px; }
+.check-icon.done { background:#D1FAE5; color:#065F46; }
+.check-icon.pending { background:#FEF3C7; color:#92400E; }
+.check-text { flex:1; }
+.check-text .clause { font-weight:700; font-size:13px; }
+.check-text .desc { font-size:12px; color:var(--text-secondary); }
+.insight-card { background:linear-gradient(135deg, #F0F9FF, #FFF8E7); border:1px solid var(--border); border-radius:10px; padding:16px; margin-bottom:10px; }
+.insight-card h4 { font-size:13px; font-weight:700; color:var(--dark-blue); margin-bottom:4px; }
+.insight-card p { font-size:12px; color:var(--text-secondary); }
+.footer { text-align:center; padding:24px 20px; font-size:10px; color:var(--text-muted); line-height:1.6; border-top:1px solid var(--border); margin-top:30px; }
+@media (max-width:768px) { .links-row { grid-template-columns:repeat(2, 1fr); } }
+@media (max-width:600px) { .stats-row { grid-template-columns:1fr 1fr; } .winner-grid { grid-template-columns:1fr; } .nav a { font-size:11px; padding:5px 10px; } }
+@media (max-width:480px) { .links-row { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="https://raw.githubusercontent.com/tmgm5258/raya_giveaway_promotion_malaysia_new_clients_lucky_draw/f22fd4df21954ebed6c4b1ebfceb4e539f79e616/download%20(1).png" alt="TMGM">
+  <h1>2026 Raya Giveaway Promotion</h1>
+  <h2>Malaysia New Clients &mdash; Campaign Hub &mdash; Internal Reference</h2>
+</div>
+<div class="nav"><div class="nav-inner">
+  <a href="#overview">Overview</a><a href="#bo-data">BO Data</a><a href="#draw-video">Draw Video</a><a href="#draw-results">Draw Results</a><a href="#winners">Winners</a><a href="#analysis">Analysis</a><a href="#compliance">Compliance</a><a href="#calc-logic">Calc Logic</a>
+</div></div>
+<div class="container">
+
+<div class="section" id="overview">
+  <div class="section-title"><span class="num">1</span> Campaign Overview</div>
+  <div class="section-sub">Key campaign parameters and reference links</div>
+  <div class="stats-row">
+    <div class="stat-card"><div class="val">Mar 2026</div><div class="label">Campaign Period</div><div class="tooltip">01 March 2026 00:00:00 &ndash; 31 March 2026 23:59:59 MT4/MT5 Time. Open to TMGM new clients whose registered country of residence is Malaysia only.</div></div>
+    <div class="stat-card"><div class="val">$200</div><div class="label">Min Net Deposit</div><div class="tooltip">New net deposit &ge;$200 USD required. Internal transfers not accepted. Net deposit = Total Deposits &minus; Total Withdrawals (clause 4e).</div></div>
+    <div class="stat-card"><div class="val">2 Lots</div><div class="label">Min Trading Vol</div><div class="tooltip">Forex &amp; Bullion = 1 lot. CFD indices, crude oil &amp; crypto = 1/10 lot. Shares excluded. Positions &ge;2 min only. Hedging excluded (clause 4g).</div></div>
+    <div class="stat-card gold"><div class="val">65</div><div class="label">Total Prizes</div><div class="tooltip">50&times; Najwa Ramadhan Raya Gift Box 2026, 10&times; 999.9 Further Top RAYA KETUPAT-1g Gold, 5&times; Xiaomi Smart Air Purifier 4 Lite. Each chance = independent draw from pool. Max 65 chances per client.</div></div>
+  </div>
+  <div class="card">
+    <p style="font-size:13px; margin-bottom:14px;"><strong>Mechanic:</strong><br>Every USD $200 new net deposit + 2 standard lots traded = 1 lucky draw chance. Requirements are tandem (both must be met). Max 65 chances per client. Each chance draws randomly from the 65-item reward pool.</p>
+    <p style="font-size:13px; margin-bottom:14px;"><strong>Prizes (65 total):</strong><br>Najwa Ramadhan Raya Gift Box 2026 (50 units) &middot; 999.9 Further Top RAYA KETUPAT-1g Gold (10 units) &middot; Xiaomi Smart Air Purifier 4 Lite (5 units). Non-transferable, no cash exchange.</p>
+    <p style="font-size:13px; margin-bottom:14px;"><strong>Period:</strong><br>01 March 2026 00:00:00 &ndash; 31 March 2026 23:59:59 (MT4/MT5 Time)</p>
+    <p style="font-size:13px; margin-bottom:14px;"><strong>Executive Summary:</strong><br>11 Malaysia-based new clients registered for the promotion. Only 1 client (9.1%) met both the deposit and trading requirements, generating a total of 3 lucky draw chances. 3 rewards were randomly drawn from the 65-item pool, resulting in 1 unique winner who received 2&times; Gold KETUPAT-1g and 1&times; Najwa Gift Box. Total eligible deposits during the campaign period: $6,272 USD. 62 rewards remain unawarded. All chance calculations verified against T&amp;C with 0 mismatches. Campaign is fully compliant &mdash; pending winner notification and prize fulfilment.</p>
+    <div class="links-row">
+      <a href="https://lnd.tmgm.com/en/rayapromo" target="_blank">&#127760; Campaign Landing Page</a>
+      <a href="https://bidholdinggroup.sharepoint.com/:b:/s/GlobalMarketingTMGM/IQAAbzLHCx5GTb4GXbF3c-mjAb3ptFs-4EmsFAUKOLcUW7c?e=1IfDVF" target="_blank">&#128196; Terms &amp; Conditions (PDF)</a>
+      <a href="https://docs.google.com/spreadsheets/d/18JWGY5cVg2gXurTKKmEnz1tVr398IqlZ7UCwuvYqfe8/edit?usp=sharing" target="_blank">&#128202; BO Raw Data</a>
+      <a href="https://thebidgroup.atlassian.net/servicedesk/customer/portal/60/OSD-2604" target="_blank">&#127915; BO Data Request (Jira OSD-2604)</a>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="bo-data">
+  <div class="section-title"><span class="num">2</span> Registered Clients &amp; BO Data</div>
+  <div class="section-sub">Full client list from BO team (Jira OSD-2604) &mdash; green row = eligible for draw</div>
+  <div class="stats-row">
+    <div class="stat-card"><div class="val">11</div><div class="label">Registered Clients</div><div class="tooltip">11 Malaysia-based new clients registered for the promotion via the TMGM Portal during March 2026. CPA/Affiliates excluded per clause 3c.</div></div>
+    <div class="stat-card"><div class="val">1</div><div class="label">Eligible (Chances &gt; 0)</div><div class="tooltip">Only 1 out of 11 registered clients met both the $200 net deposit AND 2 lots trading requirements to earn at least 1 chance. 10 clients failed the tandem threshold.</div></div>
+    <div class="stat-card"><div class="val">3</div><div class="label">Total Chances</div><div class="tooltip">3 lucky draw chances earned by Lee foon Lim (924025): floor($6,272/200)=31, floor(6.46/2)=3, min(31,3)=3.</div></div>
+    <div class="stat-card"><div class="val">9.1%</div><div class="label">Eligibility Rate</div><div class="tooltip">1 eligible out of 11 registered = 9.1%. Main drop-off: clients either didn't deposit or didn't trade enough lots (e.g., CHIN CHEW CHOONG deposited $8,352 but traded 0 lots).</div></div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>User ID</th><th>Client Name</th><th>Country</th><th>Registration Date</th><th>FTD Date</th><th>Net Deposit (USD)</th><th>Trading Vol (Lots)</th><th>Chances</th></tr></thead>
+      <tbody>
+        <tr class="eligible"><td>1</td><td>924025</td><td>Lee foon Lim</td><td>Malaysia</td><td>2026-03-16</td><td>2026-03-17</td><td>$6,272.00</td><td>6.46</td><td><strong>3</strong></td></tr>
+        <tr class="ineligible"><td>2</td><td>920467</td><td>CHIN CHEW CHOONG</td><td>Malaysia</td><td>2026-03-13</td><td>2026-03-20</td><td>$8,351.90</td><td>0.00</td><td>0</td></tr>
+        <tr class="ineligible"><td>3</td><td>911643</td><td>TZY YIKK CHUA</td><td>Malaysia</td><td>2026-03-06</td><td>2026-03-13</td><td>$206.67</td><td>0.39</td><td>0</td></tr>
+        <tr class="ineligible"><td>4</td><td>905722</td><td>KIN KWOK KAW</td><td>Malaysia</td><td>2026-03-02</td><td>2026-03-02</td><td>$0.00</td><td>0.00</td><td>0</td></tr>
+        <tr class="ineligible"><td>5</td><td>909936</td><td>MIRACLE ACCOMODATION SOLUTION</td><td>Malaysia</td><td>2026-03-05</td><td>N/A</td><td>$0.00</td><td>0.00</td><td>0</td></tr>
+        <tr class="ineligible"><td>6</td><td>765381</td><td>Boon Chyi Kee</td><td>Malaysia</td><td>2025-09-22</td><td>N/A</td><td>$0.00</td><td>0.00</td><td>0</td></tr>
+        <tr class="ineligible"><td>7</td><td>920235</td><td>MUN LI TAN</td><td>Malaysia</td><td>2026-03-13</td><td>N/A</td><td>$0.00</td><td>0.00</td><td>0</td></tr>
+        <tr class="ineligible"><td>8</td><td>914999</td><td>MUHAMAD FIRDAUS BIN JUHANIN</td><td>Malaysia</td><td>2026-03-09</td><td>2026-03-10</td><td>$0.00</td><td>0.00</td><td>0</td></tr>
+        <tr class="ineligible"><td>9</td><td>933508</td><td>HOCK FATT GAN</td><td>Malaysia</td><td>2026-03-24</td><td>2026-03-24</td><td>$0.00</td><td>0.60</td><td>0</td></tr>
+        <tr class="ineligible"><td>10</td><td>940860</td><td>KIONG YEN YIE</td><td>Malaysia</td><td>2026-03-29</td><td>2026-03-29</td><td>$0.00</td><td>0.00</td><td>0</td></tr>
+        <tr class="ineligible"><td>11</td><td>942929</td><td>MORRELL JOEL HARRY</td><td>Malaysia</td><td>2026-03-31</td><td>N/A</td><td>$0.00</td><td>0.00</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">Note: CHIN CHEW CHOONG deposited $8,351.90 but traded 0 lots &mdash; tandem requirement not met. TZY YIKK CHUA deposited $206.67 (above threshold) but only traded 0.39 lots. Boon Chyi Kee registered 22 Sep 2025 (before promo) but no FTD, so qualifies as new client under T&amp;C 3b(ii) but has $0 deposit. BO data verified with <strong>0 mismatches</strong> against T&amp;C calculation logic.</p>
+</div>
+
+<div class="section" id="draw-video">
+  <div class="section-title"><span class="num">3</span> Lucky Draw Recording</div>
+  <div class="section-sub">Official draw conducted and screen-recorded</div>
+  <div class="video-wrap">
+    <video controls preload="auto">
+      <source src="https://raw.githubusercontent.com/tmgm5258/raya_giveaway_promotion_malaysia_new_clients_lucky_draw/cba3d37cef95ea3e698867de3118583c7e395ec4/raya_giveaway_promotion_malaysia_new_clients_lucky_draw_video.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-actions">
+      <a href="https://raw.githubusercontent.com/tmgm5258/raya_giveaway_promotion_malaysia_new_clients_lucky_draw/cba3d37cef95ea3e698867de3118583c7e395ec4/raya_giveaway_promotion_malaysia_new_clients_lucky_draw_video.webm" download>&#11015; Download Video (.webm)</a>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="draw-results">
+  <div class="section-title"><span class="num">4</span> Draw Results &mdash; 3 Winning Draws</div>
+  <div class="section-sub">All 3 draws in chronological order as they appeared in the recorded draw</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Draw #</th><th>Reward Drawn</th><th>Winner Name</th><th>User ID</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Gold #10 &mdash; 999.9 Further Top RAYA KETUPAT-1g Gold</td><td>Lee foon Lim</td><td>924025</td></tr>
+        <tr><td>2</td><td>Gold #5 &mdash; 999.9 Further Top RAYA KETUPAT-1g Gold</td><td>Lee foon Lim</td><td>924025</td></tr>
+        <tr><td>3</td><td>Gift Box #23 &mdash; Najwa Ramadhan Raya Gift Box 2026</td><td>Lee foon Lim</td><td>924025</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">Post-draw pool: 49 Gift Box remaining, 8 Gold remaining, 5 Air Purifier remaining (62 total unawarded).</p>
+</div>
+
+<div class="section" id="winners">
+  <div class="section-title"><span class="num">5</span> Winner Summary &amp; Prize Allocation</div>
+  <div class="section-sub">1 unique winner from 3 draws &mdash; contact details for fulfilment team</div>
+  <div class="stats-row">
+    <div class="stat-card"><div class="val">1</div><div class="label">Unique Winner</div><div class="tooltip">Lee foon Lim (924025) was the only qualifying client and won all 3 draws: 2&times; Gold KETUPAT-1g + 1&times; Najwa Gift Box.</div></div>
+    <div class="stat-card gold"><div class="val">3</div><div class="label">Rewards Won</div><div class="tooltip">2&times; 999.9 Further Top RAYA KETUPAT-1g Gold + 1&times; Najwa Ramadhan Raya Gift Box 2026.</div></div>
+    <div class="stat-card"><div class="val">62</div><div class="label">Unawarded</div><div class="tooltip">62 rewards remain unawarded: 49 Gift Box, 8 Gold, 5 Air Purifier. Only 3 draws were conducted matching the 3 earned chances.</div></div>
+    <div class="stat-card"><div class="val">$6,272</div><div class="label">Eligible Deposits</div><div class="tooltip">Total eligible net deposits during the campaign: $6,272.00 USD from Lee foon Lim (924025).</div></div>
+  </div>
+  <div class="card">
+    <p style="font-size:13px; font-weight:700; color:var(--dark-blue); margin-bottom:16px;">Prize Allocation</p>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div style="width:180px; font-size:12px; font-weight:600; text-align:right; flex-shrink:0;">Gold KETUPAT-1g</div>
+        <div style="flex:1; background:#F1F5F9; border-radius:6px; height:32px; position:relative;">
+          <div style="width:66.7%; height:100%; background:linear-gradient(90deg, #D4A017, #E8B930); border-radius:6px; display:flex; align-items:center; padding-left:12px;">
+            <span style="font-size:12px; font-weight:800; color:#fff;">2 units (66.7%)</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div style="width:180px; font-size:12px; font-weight:600; text-align:right; flex-shrink:0;">Najwa Gift Box</div>
+        <div style="flex:1; background:#F1F5F9; border-radius:6px; height:32px; position:relative;">
+          <div style="width:33.3%; height:100%; background:linear-gradient(90deg, #C2410C, #EA580C); border-radius:6px; display:flex; align-items:center; padding-left:12px;">
+            <span style="font-size:12px; font-weight:800; color:#fff;">1 unit (33.3%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:11px; color:var(--text-muted); margin-top:12px;">Lee foon Lim drew 2 gold bars from a pool of 10 and 1 gift box from a pool of 50. No Air Purifiers were drawn.</p>
+  </div>
+  <div class="winner-grid">
+    <div class="winner-card">
+      <div class="bars">3<small>prizes</small></div>
+      <div class="info">
+        <div class="name">Lee foon Lim</div>
+        <div class="detail">User ID: 924025 &middot; Malaysia</div>
+        <div class="detail">Net Deposit: $6,272.00 &middot; Volume: 6.46 lots &middot; 3 Chances</div>
+        <div class="detail" style="margin-top:4px; font-weight:600; color:var(--gold);">2&times; Gold KETUPAT-1g + 1&times; Najwa Gift Box</div>
+      </div>
+      <div class="status">Pending</div>
+    </div>
+  </div>
+  <p style="font-size:11px; color:var(--text-muted); margin-top:12px;">Fulfilment Status: Currently &ldquo;Pending&rdquo;. Winner has 5 business days from announcement to provide delivery info per T&amp;C clause 6.</p>
+</div>
+
+<div class="section" id="analysis">
+  <div class="section-title"><span class="num">6</span> Campaign Analysis</div>
+  <div class="section-sub">Key insights from the campaign</div>
+  <div class="insight-card"><h4>&#128202; Participation &amp; Eligibility</h4><p>11 clients registered, but only 1 (9.1%) earned at least 1 chance. 10 clients registered but failed to meet the tandem deposit + trading requirement. The biggest drop-off factor was <strong>trading volume</strong> &mdash; CHIN CHEW CHOONG deposited $8,351.90 but traded 0 lots, and TZY YIKK CHUA deposited $206.67 but only traded 0.39 lots.</p></div>
+  <div class="insight-card"><h4>&#127942; Winner Distribution</h4><p>With only 1 qualifying client (3 chances) and 65 prizes in the pool, Lee foon Lim received all 3 drawn rewards. The remaining 62 rewards (49 Gift Box, 8 Gold, 5 Air Purifier) go unawarded. Drawing 2 gold bars from a pool of 10 (15.4% probability each) was a relatively lucky outcome.</p></div>
+  <div class="insight-card"><h4>&#128176; Deposit vs Volume Gap</h4><p>Combined registered deposits were significant &mdash; $8,351.90 (CHIN CHEW CHOONG) + $6,272 (Lee foon Lim) + $206.67 (TZY YIKK CHUA) = $14,830.57 in gross deposits, but trading activity was extremely low. This suggests a disconnect between deposit intent and trading engagement for Malaysian new clients.</p></div>
+</div>
+
+<div class="section" id="compliance">
+  <div class="section-title"><span class="num">7</span> T&amp;C Compliance Checklist</div>
+  <div class="section-sub">End-to-end audit trail &mdash; every T&amp;C clause checked</div>
+  <div class="card">
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 1 &mdash; Promotion Period</div><div class="desc">01 Mar &ndash; 31 Mar 2026. Campaign ended on schedule. Draw conducted within 5 business days.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 2 &mdash; Registration</div><div class="desc">All participants clicked &ldquo;Sign up Now&rdquo; within the Promotions page on their TMGM Portal during the Promotion Period.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 3a &mdash; Malaysia Residents Only</div><div class="desc">All 11 registered clients have Malaysia as country of residence. Verified in BO data.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 3b &mdash; New Clients Only</div><div class="desc">BO team verified all registrants are new clients per the two-part definition (not registered or registered without deposit before 1 March 2026).</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 3c &mdash; CPA/Affiliates Excluded</div><div class="desc">BO team filtered out CPA and Affiliate accounts from the eligible list.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 4f &mdash; Tandem Requirement ($200 + 2 Lots)</div><div class="desc">Chances = min(floor(deposit/200), floor(lots/2)), capped at 65. BO data verified with 0 mismatches across all 11 clients.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 4e &mdash; New Net Deposits Only</div><div class="desc">Internal transfers excluded. Net deposit = Total Deposits &minus; Total Withdrawals. Confirmed by BO team in Jira OSD-2604.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 4g &mdash; Lot Calculation Rules</div><div class="desc">Forex &amp; Bullion = 1 lot; CFD indices/crude/crypto = 1/10 lot; Shares excluded; &ge;2 min hold; hedging excluded; trades must open AND close within period.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 4h &mdash; Cents Accounts</div><div class="desc">Deposits count, trading volume excluded. Applied correctly by BO team.</div></div></div>
+    <div class="check-item"><div class="check-icon done">&#10003;</div><div class="check-text"><div class="clause">Clause 5 &mdash; Reward Pool &amp; Draw</div><div class="desc">65 rewards total (50+10+5). 3 draws conducted from pool. Draw recorded via screen recording tool.</div></div></div>
+    <div class="check-item"><div class="check-icon pending">&#9744;</div><div class="check-text"><div class="clause">Clause 6 &mdash; Announce Winners</div><div class="desc">Pending. Winner to be announced on campaign landing page, TMGM social media channels, and via EDM within 5 business days.</div></div></div>
+    <div class="check-item"><div class="check-icon pending">&#9744;</div><div class="check-text"><div class="clause">Clause 6 &mdash; Notify Winner &amp; Collect Delivery Info</div><div class="desc">Pending. Lee foon Lim (924025) to be contacted via email. Must provide delivery info within 5 business days.</div></div></div>
+    <div class="check-item"><div class="check-icon pending">&#9744;</div><div class="check-text"><div class="clause">Prize Fulfilment</div><div class="desc">Pending. 2&times; 999.9 Further Top RAYA KETUPAT-1g Gold + 1&times; Najwa Ramadhan Raya Gift Box 2026 to be arranged and shipped.</div></div></div>
+  </div>
+</div>
+
+<div class="section" id="calc-logic">
+  <div class="section-title"><span class="num">8</span> Chance Calculation Logic</div>
+  <div class="section-sub">How lucky draw chances were calculated &mdash; based on T&amp;C clauses 4a&ndash;4h</div>
+  
+  <div class="card" style="background:linear-gradient(135deg, #F0F9FF, #F8FAFC); border-color:var(--mid-blue);">
+    <p style="font-size:11px; color:var(--text-secondary); text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:8px;">Core Formula (Clause 4f)</p>
+    <div style="background:var(--dark-blue); color:#fff; padding:16px 20px; border-radius:10px; font-family:monospace; font-size:15px; text-align:center; letter-spacing:0.5px;">
+      Chances = min( floor( Net Deposit &divide; $200 ) , floor( Trading Lots &divide; 2 ) ) , capped at 65
+    </div>
+    <p style="font-size:12px; color:var(--text-secondary); margin-top:10px; text-align:center;">
+      Both conditions must be met simultaneously &mdash; this is the <strong>tandem requirement</strong>. The lower of the two determines the chance count.
+    </p>
+  </div>
+
+  <div class="card">
+    <p style="font-size:13px; font-weight:700; color:var(--dark-blue); margin-bottom:12px;">Worked Examples Using Actual Client Data</p>
+    <div class="table-wrap">
+      <table style="min-width:auto;">
+        <thead>
+          <tr><th>Client</th><th>User ID</th><th>Net Deposit</th><th>floor(Dep&divide;200)</th><th>Trading Lots</th><th>floor(Lots&divide;2)</th><th>Chances</th><th>Explanation</th></tr>
+        </thead>
+        <tbody>
+          <tr class="eligible"><td>Lee foon Lim</td><td>924025</td><td>$6,272</td><td>31</td><td>6.46</td><td>3</td><td><strong>3</strong></td><td>min(31, 3) = 3 &mdash; trading volume is the limiting factor</td></tr>
+          <tr class="ineligible"><td>CHIN CHEW CHOONG</td><td>920467</td><td>$8,352</td><td>41</td><td>0.00</td><td>0</td><td><strong>0</strong></td><td>min(41, 0) = 0 &mdash; deposited $8,352 but never traded</td></tr>
+          <tr class="ineligible"><td>TZY YIKK CHUA</td><td>911643</td><td>$207</td><td>1</td><td>0.39</td><td>0</td><td><strong>0</strong></td><td>min(1, 0) = 0 &mdash; met deposit but volume too low</td></tr>
+          <tr class="ineligible"><td>HOCK FATT GAN</td><td>933508</td><td>$0</td><td>0</td><td>0.60</td><td>0</td><td><strong>0</strong></td><td>min(0, 0) = 0 &mdash; no deposit, some trading</td></tr>
+          <tr class="ineligible"><td>KIN KWOK KAW</td><td>905722</td><td>$0</td><td>0</td><td>0.00</td><td>0</td><td><strong>0</strong></td><td>min(0, 0) = 0 &mdash; registered but no activity</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr; gap:12px;">
+    <div class="card">
+      <p style="font-size:13px; font-weight:700; color:var(--dark-blue); margin-bottom:10px;">Lot Conversion Rules (Clause 4g)</p>
+      <div class="table-wrap">
+        <table style="min-width:auto;">
+          <thead><tr><th>Instrument</th><th>Conversion</th></tr></thead>
+          <tbody>
+            <tr><td>Forex &amp; Bullion</td><td><strong>1 standard lot = 1 lot</strong></td></tr>
+            <tr><td>CFD Indices, Crude Oil, Crypto</td><td><strong>1 standard lot = 0.1 lot</strong></td></tr>
+            <tr><td>Shares</td><td><strong>Excluded entirely</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">
+        <strong>Additional rules:</strong> Only positions held &ge;2 minutes count. Hedging orders excluded. Only trades opened AND closed within the Promotion Period count.
+      </p>
+    </div>
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--gold); background:var(--gold-light);">
+    <p style="font-size:13px; font-weight:700; color:var(--dark-blue); margin-bottom:4px;">Cents Accounts (Clause 4h)</p>
+    <p style="font-size:12px; color:var(--text-secondary);">
+      For Cents Accounts: <strong>net deposits count</strong> toward promotion requirements, but <strong>trading volume (lots) is excluded</strong> from all promotion-related calculations.
+    </p>
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--green);">
+    <p style="font-size:13px; font-weight:700; color:var(--dark-blue); margin-bottom:4px;">&#10003; Verification Result</p>
+    <p style="font-size:12px; color:var(--text-secondary);">
+      All 11 client rows from the BO team were independently verified against this formula. <strong>0 mismatches found.</strong> Every chance allocation matches the T&amp;C calculation logic exactly.
+    </p>
+  </div>
+</div>
+
+</div>
+<div class="footer">
+  TMGM 2026 Raya Giveaway Promotion &mdash; Malaysia New Clients &mdash; Internal Campaign Hub<br>
+  Conducted under Trademax Global Limited (VFSC 40356).<br>
+  This document is for internal use only. Contains client PII &mdash; do not share externally.<br>
+  Jira Reference: OSD-2604 &middot; Generated April 2026
+</div>
+</body>
+</html>
